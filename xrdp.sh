@@ -12,8 +12,7 @@ sudo service xrdp start
 apt-get install -y xfonts-100dpi xfonts-100dpi-transcoded xfonts-75dpi xfonts-75dpi-transcoded xfonts-base
 apt-get install -y tightvncserver
 tightvncserver :1
-echo XRDP Address:
-curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
+echo XRDP Address: "https://dashboard.ngrok.com/endpoints/status"
 echo "===================================="
 echo "More  Free VPS akuh.net"
 echo "===================================="
